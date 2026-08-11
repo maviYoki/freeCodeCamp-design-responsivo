@@ -1,0 +1,61 @@
+body {
+   background-color: rosybrown;
+   font-family: Arial, sans-serif;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.business-card {
+   width: 300px;
+   background-color: black;
+   text-align: center;
+   padding: 20px;
+   margin-top: 100px;
+   margin-left: auto;
+   margin-right: auto;
+   font-size: 16px;
+   border-radius: 10px;
+}
+
+.business-card a:link {
+   color: white;
+}
+
+.business-card a:hover {
+   color: pink;
+}
+
+.business-card a:active {
+   color: grey;
+}
+
+.profile-image {
+   max-width: 100%;
+   border-radius: 50%;
+}
+
+p {
+   color: white;
+   margin: 5px 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.social-media {
+   width: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.social-media h2 {
+   color: white;
+}
