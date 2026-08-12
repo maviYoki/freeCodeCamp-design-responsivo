@@ -6,6 +6,7 @@ body {
    border-radius: 3px;
    width: 80%;
    margin: 0 auto;
+   text-align: left;
 }
 
 .post-img {
@@ -34,4 +35,9 @@ body {
    padding: 2.5px;
    border-radius: 5px;
    display: inline-block;
+}
+
+.read-more:hover {
+   background-color: grey;
+   color: black;
 }
