@@ -1,0 +1,63 @@
+body {
+   width: 90vw;
+   min-height: calc(100vh - 100px);
+   margin: 0 auto;
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+   background:
+      linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+      url('https://imgs.search.brave.com/OldusE6J4pUf-O8FfHzR47WQXSaCIMEVvJzGBJokqsU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvaGlnaC9k/aXJ0eS1kYXJrLWJy/aWNrLXdhbGwtcTZp/NG9jbjZtemRqaWFk/by5qcGc')
+         center / cover no-repeat;
+}
+
+.event-header {
+   text-align: center;
+}
+
+.event-image {
+   width: 30%;
+}
+
+main {
+   text-align: center;
+}
+
+.event-detail {
+   width: 40%;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+   vertical-align: middle;
+}
+
+.event-detail-title,
+.event-detail-text {
+   margin: 0;
+   font-size: 16px;
+}
+
+.event-information {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+
+.information-card {
+   width: 40%;
+}
+
+.winner-list {
+   padding-left: 20px;
+   text-align: left;
+   list-style-position: inside;
+}
+
+hr {
+   width: 90%;
+}
+
+.event-footer {
+   text-align: center;
+}
