@@ -1,0 +1,125 @@
+* {
+   font-family: 'Arial', sans-serif;
+}
+
+body {
+   background-color: #fffafa;
+}
+
+h1 {
+   text-align: center;
+}
+
+form {
+   padding: 20px 60px;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: column;
+}
+
+label:not([class='availability']),
+legend {
+   font-weight: bold;
+   font-size: 1.2rem;
+   margin-bottom: 3px;
+}
+
+input,
+select,
+legend {
+   font-size: 0.99rem;
+}
+
+input,
+select {
+   padding: 4px;
+}
+
+input:not([type='radio']),
+select,
+textarea,
+fieldset {
+   margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+   border-radius: 5px;
+}
+
+input:focus,
+textarea:focus {
+   border: 1px solid #1e90ff;
+   outline: none;
+}
+
+input:invalid:not(:focus),
+select:invalid:not(:focus),
+textarea:invalid:not(:focus) {
+   border: 1px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+   border: 2px solid green;
+}
+
+select:has(option[value='']:checked) {
+   color: gray;
+}
+
+select option {
+   color: black;
+}
+
+button {
+   min-width: 100px;
+   max-width: 200px;
+   min-height: 40px;
+   font-size: 1rem;
+   border-radius: 8px;
+   background-color: green;
+   color: white;
+   border: none;
+   padding: 15px;
+}
+
+form button {
+   align-self: center;
+}
+
+button:hover {
+   background-color: black;
+   cursor: pointer;
+}
+
+.radio-group input[type='radio'] {
+   appearance: none;
+   width: 15px;
+   height: 15px;
+   border-radius: 10px;
+   border: 2px solid gray;
+}
+
+.radio-group input[type='radio']:hover {
+   outline: 1px solid #1e90ff;
+   border: 2px solid #1e90ff;
+   cursor: pointer;
+}
+
+.radio-group input[type='radio']:checked {
+   background-color: green;
+   border: 2px solid white;
+   outline: 1px solid green;
+   box-shadow: 0 0 0 3px green;
+}
+
+.radio-group input[type='radio']:checked + label {
+   color: green;
+}
+
+input:first-of-type {
+   background-color: white;
+}
