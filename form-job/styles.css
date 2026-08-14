@@ -53,7 +53,7 @@ textarea:focus {
    border: 1px solid #1e90ff;
    outline: none;
 }
-
+/* Personalização: alterei o comportamento do :invalid para não exibir a borda vermelha enquanto o campo está em foco. */
 input:invalid:not(:focus),
 select:invalid:not(:focus),
 textarea:invalid:not(:focus) {
