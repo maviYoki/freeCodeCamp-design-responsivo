@@ -3,7 +3,14 @@
 }
 
 body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
    background-color: #fffafa;
+}
+
+main {
+   flex: 1;
 }
 
 h1 {
@@ -122,4 +129,10 @@ button:hover {
 
 input:first-of-type {
    background-color: white;
+}
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
