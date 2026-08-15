@@ -1,0 +1,40 @@
+body {
+   background-color: #f4f4f4;
+}
+
+.color-grid {
+   display: flex;
+}
+
+h1 {
+   font-family: 'Arial', sans-serif;
+   text-align: center;
+   font-size: 2.5rem;
+}
+
+.color-box {
+   width: 17vw;
+   height: 25vh;
+   margin: 10px auto;
+   border-radius: 10px;
+}
+
+.color1 {
+   background-color: #483d8b;
+}
+
+.color2 {
+   background-color: rgb(106, 90, 205);
+}
+
+.color3 {
+   background-color: purple;
+}
+
+.color4 {
+   background-color: hsl(270, 60%, 50%);
+}
+
+.color5 {
+   background-color: plum;
+}
