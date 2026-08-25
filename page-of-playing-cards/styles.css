@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Bangers&display=swap');
+
+body {
+   background: gray;
+}
+
+h1 {
+   text-align: center;
+   color: white;
+   font-family: 'Bangers', system-ui;
+   font-weight: normal;
+}
+.junji-ito {
+   width: 150px;
+   height: 150px;
+   object-fit: cover;
+   padding: 10px;
+}
+
+.card {
+   width: 250px;
+   height: 350px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 20px;
+   border: 1px solid black;
+   border-radius: 10px;
+   background: white;
+   box-shadow: 5px 5px 10px black;
+}
+
+#playing-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+.left,
+.right,
+.middle {
+   font-size: 1.5rem;
+   font-weight: bold;
+   display: flex;
+   flex-direction: column;
+}
+
+.left {
+   align-self: flex-start;
+}
+
+.right {
+   align-self: flex-end;
+   transform: rotate(180deg);
+}
+
+.middle {
+   flex-direction: column;
+   display: flex;
+   align-self: center;
+   align-items: center;
+}
+
+.work-title {
+   font-family: 'Bangers', system-ui;
+   font-size: 1.38rem;
+   font-weight: normal;
+   text-align: center;
+   color: black;
+}
+
+.red {
+   color: red;
+}
