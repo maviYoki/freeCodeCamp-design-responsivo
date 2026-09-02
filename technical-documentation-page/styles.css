@@ -1,0 +1,105 @@
+@media (min-width: 993px) and (max-width: 1200px) {
+   #navbar {
+      position: fixed;
+   }
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: sans-serif;
+   display: flex;
+}
+
+nav {
+   position: fixed;
+   height: 100%;
+}
+
+main {
+   margin-left: 280px;
+   width: 100%;
+}
+
+#navbar {
+   border-right: 1px solid black;
+}
+
+#navbar header {
+   font-weight: 700;
+   font-size: 2rem;
+}
+
+.navbar-list {
+   list-style: none;
+   padding-left: 0;
+}
+
+.navbar-list li {
+   padding: 15px;
+   border-style: solid;
+   border-color: black;
+   border-width: 0 0 1px 0;
+}
+
+.navbar-list li:first-child {
+   border-top: 1px solid black;
+}
+
+.navbar-list li a {
+   text-decoration: none;
+   color: black;
+}
+
+.navbar-list li:hover {
+   background-color: rgb(190, 190, 190);
+   font-weight: 600;
+   cursor: pointer;
+}
+
+.main-section header {
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+.main-section:not(:first-child) header {
+   padding-top: 60px;
+}
+
+.main-section p {
+   text-indent: 15px;
+}
+
+hr {
+   width: 100%;
+}
+
+.code-block code {
+   display: flex;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: black;
+   color: white;
+   width: 500px;
+   text-indent: 15px;
+   white-space: pre-line;
+}
+
+code {
+   background-color: rgb(76, 76, 76);
+   padding: 5px;
+   border-radius: 7px;
+   color: white;
+}
+
+pre {
+   display: flex;
+}
+
+p {
+   margin-top: 3px;
+   margin-bottom: 3px;
+}

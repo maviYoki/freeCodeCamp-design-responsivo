@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Technical Documentation Page</title>
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+
+   <body>
+      <nav id="navbar">
+         <header>Basic Git</header>
+         <ul class="navbar-list">
+            <li>
+               <a href="#Introduction_to_Git" class="nav-link"
+                  >Introduction to Git</a
+               >
+            </li>
+            <li>
+               <a href="#Repositories_and_Commits" class="nav-link"
+                  >Repositories and Commits</a
+               >
+            </li>
+            <li>
+               <a href="#Branches_and_Merging" class="nav-link"
+                  >Branches and Merging</a
+               >
+            </li>
+            <li>
+               <a href="#Remote_Repositories" class="nav-link"
+                  >Remote Repositories</a
+               >
+            </li>
+            <li>
+               <a href="#Working_as_a_Team" class="nav-link"
+                  >Working as a Team</a
+               >
+            </li>
+         </ul>
+      </nav>
+
+      <main id="main-doc">
+         <section class="main-section" id="Introduction_to_Git">
+            <header>Introduction to Git</header>
+
+            <h3>What is Git?</h3>
+            <p>
+               Git is a version control system. It allows you to track changes
+               made to a project over time.
+            </p>
+            <p>
+               With Git, you can go back to previous versions, create different
+               versions of your project, and work with other people.
+            </p>
+
+            <h3>Why use Git?</h3>
+            <ul>
+               <li>Keep a history of the project.</li>
+               <li>Recover previous versions.</li>
+               <li>Work with a team.</li>
+               <li>Create branches for different features.</li>
+               <li>Upload projects to platforms like GitLab and GitHub.</li>
+            </ul>
+
+            <p>Check if Git is installed with:</p>
+            <div class="code-block">
+               <pre>
+            <code>git --version</code>
+          </pre>
+            </div>
+            <p>
+               This command shows the version of Git installed on your computer.
+            </p>
+         </section>
+         <hr />
+
+         <section class="main-section" id="Repositories_and_Commits">
+            <header>Repositories and Commits</header>
+
+            <h3>Creating a Repository</h3>
+            <p>
+               A <b>repository</b> is a place where Git tracks the files and
+               changes of a project.
+            </p>
+            <p>
+               To start using Git in a folder, open the terminal inside the
+               folder and run:
+            </p>
+
+            <div class="code-block">
+               <pre>
+            <code>git init</code>
+          </pre>
+            </div>
+
+            <p>Git will now start tracking the folder.</p>
+
+            <p>You can check the current state of the repository with:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git status</code>
+          </pre>
+            </div>
+
+            <p>
+               The <code>git status</code> command shows which files were
+               modified, added, or are not being tracked yet.
+            </p>
+
+            <h3>Creating Commits</h3>
+            <p>
+               A <b>commit</b> records a group of changes in the project's
+               history.
+            </p>
+
+            <p>First, add the files you want to include:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git add .</code>
+          </pre>
+            </div>
+
+            <p>Then, create the commit:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git commit -m "Add home screen"</code>
+          </pre>
+            </div>
+
+            <p>
+               A good commit message should briefly explain what was changed.
+            </p>
+
+            <p>For example:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git commit -m "Fix login button"</code>
+          </pre>
+            </div>
+         </section>
+         <hr />
+
+         <section class="main-section" id="Branches_and_Merging">
+            <header>Branches and Merging</header>
+
+            <h3>What are Branches?</h3>
+            <p>
+               A <b>branch</b> allows you to create a separate line of
+               development.
+            </p>
+            <p>
+               This is useful when multiple people are working on the same
+               project.
+            </p>
+
+            <p>To create a branch:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git switch -c feature/login</code>
+          </pre>
+            </div>
+
+            <p>To switch to an existing branch:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git switch main</code>
+          </pre>
+            </div>
+
+            <p>For example:</p>
+
+            <div class="code-block">
+               <pre>
+            <code class="code-branch">
+              main
+              │
+              ├── feature/login
+              ├── feature/menu
+              └── feature/dialogue
+            </code>
+          </pre>
+            </div>
+
+            <p>
+               Each team member can work on a feature without directly changing
+               the <code>main</code> branch.
+            </p>
+
+            <h3>Merging Branches</h3>
+            <p>
+               When a feature is finished, you can merge its changes into
+               another branch.
+            </p>
+
+            <div class="code-block">
+               <pre>
+            <code>
+              git switch main
+              git merge feature/login
+            </code>
+          </pre>
+            </div>
+
+            <p>
+               This adds the changes from the feature branch to the main branch.
+            </p>
+         </section>
+         <hr />
+
+         <section class="main-section" id="Remote_Repositories">
+            <header>Remote Repositories</header>
+
+            <h3>What is a Remote Repository?</h3>
+            <p>
+               A <b>remote repository</b> is a version of your project stored on
+               a server, such as GitHub or GitLab.
+            </p>
+            <p>
+               It allows team members to share the same project and synchronize
+               their changes.
+            </p>
+
+            <h3>Connecting to a Remote Repository</h3>
+            <p>To connect your local repository to a remote repository, use:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git remote add origin https://github.com/user/project.git</code>
+          </pre>
+            </div>
+
+            <h3>Uploading Changes</h3>
+            <p>To upload your commits to the remote repository, use:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>git push origin main</code>
+          </pre>
+            </div>
+
+            <p>
+               The <code>git push</code> command sends your local commits to the
+               remote repository.
+            </p>
+         </section>
+         <hr />
+
+         <section class="main-section" id="Working_as_a_Team">
+            <header>Working as a Team</header>
+
+            <h3>Downloading Changes</h3>
+            <p>
+               Before starting work, it is a good idea to update your local
+               repository.
+            </p>
+
+            <div class="code-block">
+               <pre>
+            <code>
+              git switch main
+              git pull
+            </code>
+          </pre>
+            </div>
+
+            <p>
+               The <code>git pull</code> command downloads the latest changes
+               from the remote repository.
+            </p>
+
+            <h3>Cloning a Repository</h3>
+            <p>
+               If you want to download an existing repository to your computer,
+               use:
+            </p>
+
+            <div class="code-block">
+               <pre>
+            <code>git clone https://github.com/user/project.git</code>
+          </pre>
+            </div>
+
+            <p>This creates a local copy of the remote repository.</p>
+
+            <h3>Basic Team Workflow</h3>
+            <ul>
+               <li>Pull the latest changes.</li>
+               <li>Create a branch for your feature.</li>
+               <li>Make your changes.</li>
+               <li>Commit your changes.</li>
+               <li>Push your branch to the remote repository.</li>
+               <li>Merge the changes into the main branch.</li>
+            </ul>
+
+            <p>Example:</p>
+
+            <div class="code-block">
+               <pre>
+            <code>
+              git switch main
+              git pull
+              git switch -c feature/menu
+              git add .
+              git commit -m "Add menu"
+              git push origin feature/menu
+            </code>
+          </pre>
+            </div>
+         </section>
+      </main>
+   </body>
+</html>
